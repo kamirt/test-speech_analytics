@@ -1,0 +1,57 @@
+.player
+  background-color: #fff
+  border-radius: 4px
+  box-shadow: 0px 3px 7px rgba(0,0,0,0.1)
+  width: 45%
+  position: fixed
+  bottom: 30px
+  display: flex
+  align-items: center
+  justify-content: space-between
+  padding: 20px 30px
+  color: #8494a6
+
+.progress-container
+  flex: .75
+  height: 4px
+  position: relative
+
+.btn-container
+  flex: .1
+  display: flex
+  align-items: center
+  justify-content: flex-start
+
+.time-container
+  flex: .15
+  display: flex
+  justify-content: flex-end
+  min-width: 100px
+
+@media screen and (max-width: 1024px)
+  .player
+    width: 80%
+    padding: 20px 20px
+
+  .progress-container
+    flex: .75
+
+  .btn-container
+    flex: .1
+
+  .time-container
+    flex: .24
+
+@media screen and (max-width: 500px)
+  .player
+    width: 80%
+    padding: 20px 20px
+
+  .progress-container
+    flex: .55
+
+  .btn-container
+    flex: .19
+
+  .time-container
+    flex: .26

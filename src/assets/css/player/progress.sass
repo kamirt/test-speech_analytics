@@ -1,0 +1,38 @@
+.progress-line
+  position: absolute
+  width: 100%
+  height: 100%
+  background-color: #e8e8e8
+  z-index: 1
+  pointer-events: none
+
+  &__buffered
+    width: 0
+    z-index: 2
+    background-color: #c3c3c3
+    pointer-events: none
+
+  &__time
+    pointer-events: none
+    width: 0
+    z-index: 3
+    background-color: #3374eb
+
+    &:after
+      position: absolute
+      content: ''
+      width: 13px
+      height: 13px
+      background-color: #3374eb
+      border-radius: 7px
+      right: -13px
+      top: -4px
+      pointer-events: none
+
+.progress-phantom
+  position: absolute
+  height: 300%
+  width: 100%
+  top: -100%
+  background-color: transparent
+  z-index: 5
